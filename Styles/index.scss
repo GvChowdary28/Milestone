@@ -1,0 +1,122 @@
+@import './variables';
+
+html {
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    padding: 0px 30px;
+}
+.container{
+    padding: 0px;
+}
+.navbar{
+    padding: 10px 0px 0px!important;
+}
+.nav-link{
+    color: $black;
+    font-size: 13px;
+}
+.nav-link:hover{
+    color: $book;
+}
+video{
+    width: inherit;
+}
+.book:hover{
+    color: $black;
+}
+.dropdown-item{
+    font-size: 13px;
+}
+.book{
+    color: #ffffff;
+    background-color: $book;
+    border: 2px solid $book;
+    padding: 8px 30px;
+    font-size: 13px;
+}
+.carousel-caption{
+    .caption_headline{
+        font-size: 30px;
+    }
+    .caption_text{
+        font-size: 13px;
+        color: $white;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .fa-angle-down{
+        color: $white;
+    }
+}
+.contentToggle{
+    border:1px solid $book;
+    border-radius: 50%;
+    padding:1px 3px;
+    color: $book;
+    font-size: 10px;
+}
+.contentToggle:hover{
+    color: $book;
+}
+.borderBook{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    width: 46px;
+    border-top: 1px solid $book;
+}
+.footer_donation{
+    background-color: $book;
+}
+.donation{
+    color: $white ;
+    vertical-align: -webkit-baseline-middle;
+}
+.footer_nav{
+    background-color: $footerBackground;
+    .nav-link{
+        color: $white ;
+    }
+}
+#content {
+    display: none;
+}
+#title {
+    cursor: hand;
+}
+@media (max-width: 576px) { 
+    .container-fluid{
+        padding: 0px 10px;
+    }
+    .book{
+        color: #ffffff;
+        background-color: $book;
+        border: 2px solid $book;
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+    .carousel-caption{
+        position: absolute;
+        right: 10%;
+        bottom: -20px;
+        left: 10%;
+        z-index: 10;
+        .caption_headline{
+            font-size: 12px;
+            vertical-align: -webkit-baseline-middle;
+        }
+        .caption_text{
+            font-size: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .dropdown:hover{
+        .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+    } 
+  }
