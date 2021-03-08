@@ -3,6 +3,9 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    padding-top: 70px;
+}
 .container-fluid{
     padding: 0px 30px;
 }
@@ -10,7 +13,9 @@ html {
     padding: 0px;
 }
 .navbar{
-    padding: 10px 0px 0px!important;
+    background-color: $white;
+    padding-left: 125px;
+    padding-right: 125px;
 }
 .nav-link{
     color: $black;
@@ -89,6 +94,10 @@ video{
 @media (max-width: 576px) { 
     .container-fluid{
         padding: 0px 10px;
+    }
+    .navbar{
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .book{
         color: #ffffff;
